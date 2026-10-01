@@ -1,0 +1,29 @@
+/* Muhafız Playz — responsive rules (loaded after style.css) */
+@media (max-width:900px){
+  .detail{grid-template-columns:200px 1fr;gap:22px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .menu-toggle{display:grid}
+  .nav{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);padding:10px 16px 16px;margin:0}
+  .nav.open{display:flex}
+  .nav a{padding:13px 12px;font-size:1rem}
+  .header-actions{margin-left:auto}
+  .hide-mobile{display:none}
+  .hero{min-height:360px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+  .ep-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 14px}
+  .detail{grid-template-columns:1fr}
+  .detail-poster{max-width:220px}
+  .ep-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .ep-row{flex-wrap:wrap}
+  .ep-row .num{min-width:0}
+  .dl-buttons .btn{flex:1 1 40%}
+  .search-form{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:760px){.detail.wide{grid-template-columns:1fr}.detail.wide .detail-poster{max-width:none}}
