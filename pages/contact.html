@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Muhafız Playz</title>
+<meta name="description" content="Contact Muhafız Playz.">
+<meta name="theme-color" content="#151517">
+<link rel="icon" href="../assets/logo/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<header id="site-header"></header>
+<main><div class="wrap"><h1 class="page-title">Contact</h1><div class="prose">
+<p id="contact-text">Questions, partnerships or copyright requests? Get in touch.</p>
+<div class="dl-buttons" id="contact-buttons"></div>
+<p id="contact-email" style="margin-top:14px"></p>
+<p style="margin-top:14px">For copyright complaints, please follow the steps on the <a href="dmca.html">DMCA / Copyright</a> page.</p>
+</div></div></main>
+<footer id="site-footer"></footer>
+<noscript><div class="noscript">Please enable JavaScript to browse Muhafız Playz. <a href="../pages/privacy.html">Privacy</a> | <a href="../pages/terms.html">Terms</a> | <a href="../pages/dmca.html">DMCA</a></div></noscript>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/config.js"></script>
+<script src="../js/supabase.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/seo.js"></script>
+<script>
+(async () => {
+  await MP.init();
+  const c = MP.state.contact || {};
+  if (c.contact_text) document.getElementById("contact-text").textContent = c.contact_text;
+  const b = [], wa = MP.waLink(c.whatsapp_number), tg = MP.safeUrl(c.telegram_url);
+  if (wa && c.show_whatsapp_button !== false) b.push(`<a class="btn btn-primary" href="${wa}" target="_blank" rel="noopener">Chat on WhatsApp</a>`);
+  if (tg && c.show_telegram_button !== false) b.push(`<a class="btn" href="${MP.esc(tg)}" target="_blank" rel="noopener">Message on Telegram</a>`);
+  document.getElementById("contact-buttons").innerHTML = b.join("");
+  if (c.email) document.getElementById("contact-email").innerHTML = `Email: <a href="mailto:${MP.esc(c.email)}">${MP.esc(c.email)}</a>`;
+  if (!b.length && !c.email) document.getElementById("contact-buttons").innerHTML = MP.notice("Contact details have not been added yet.");
+  MP.seo.set({ title: "Contact", description: "Contact Muhafız Playz.", path: "pages/contact.html" });
+})();
+</script>
+</body>
+</html>

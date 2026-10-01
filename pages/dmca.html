@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DMCA / Copyright | Muhafız Playz</title>
+<meta name="description" content="Copyright contact and takedown process for Muhafız Playz.">
+<meta name="theme-color" content="#151517">
+<link rel="icon" href="../assets/logo/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<header id="site-header"></header>
+<main><div class="wrap"><h1 class="page-title">DMCA / Copyright</h1><div class="prose">
+<p>We respect the rights of creators and copyright owners. This site is meant to list only content the operator owns, created, licensed, or is otherwise permitted to distribute.</p>
+<h2>How to send a copyright notice</h2>
+<p>If you are the copyright owner (or authorized to act for the owner) and believe material on this site infringes your rights, send a notice to <span id="dmca-email">the email address on our <a href="contact.html">Contact</a> page</span> that includes:</p>
+<ul><li>Your full name, address, phone number and email.</li><li>A description of the copyrighted work you say was infringed.</li><li>The exact web address (URL) of the page or link on this site.</li><li>A statement that you have a good-faith belief the use is not authorized by the owner, its agent or the law.</li><li>A statement that the information in your notice is accurate and, under penalty of perjury, that you are the owner or authorized to act for the owner.</li><li>Your physical or electronic signature.</li></ul>
+<h2>What happens next</h2>
+<p>We review complete notices promptly and remove or disable access to material that appears to infringe. If you believe material was removed by mistake, you may send a counter-notice to the same address explaining why the removal was an error.</p>
+<p>Submitting a knowingly false notice may have legal consequences.</p>
+</div></div></main>
+<footer id="site-footer"></footer>
+<noscript><div class="noscript">Please enable JavaScript to browse Muhafız Playz. <a href="../pages/privacy.html">Privacy</a> | <a href="../pages/terms.html">Terms</a> | <a href="../pages/dmca.html">DMCA</a></div></noscript>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/config.js"></script>
+<script src="../js/supabase.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/seo.js"></script>
+<script>
+(async () => {
+  await MP.init();
+  const m = (MP.state.contact || {}).email;
+  if (m) document.getElementById("dmca-email").innerHTML = `<a href="mailto:${MP.esc(m)}">${MP.esc(m)}</a>`;
+  MP.seo.set({ title: "DMCA / Copyright", description: "Copyright contact and takedown process for Muhafız Playz.", path: "pages/dmca.html" });
+})();
+</script>
+</body>
+</html>

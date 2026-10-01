@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Muhafız Playz</title>
+<meta name="description" content="About Muhafız Playz and the content it lists.">
+<meta name="theme-color" content="#151517">
+<link rel="icon" href="../assets/logo/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../">
+<header id="site-header"></header>
+<main><div class="wrap"><h1 class="page-title">About</h1><div class="prose">
+<p>Muhafız Playz is a catalogue of Turkish dramas, Urdu-subtitled series and movies. Each title page lists its details, episodes and, where available, download or watch links supplied by the site administrator.</p>
+<h2>Our content policy</h2>
+<p>Titles and links are published only when the site operator owns the content, created it, licensed it, or has permission from the rights holder to distribute it. If you believe something on this site should not be here, please use our <a href="dmca.html">DMCA / Copyright</a> page and we will review it promptly.</p>
+<h2>Contact</h2>
+<p>Questions or partnership requests? Visit the <a href="contact.html">Contact</a> page.</p>
+</div></div></main>
+<footer id="site-footer"></footer>
+<noscript><div class="noscript">Please enable JavaScript to browse Muhafız Playz. <a href="../pages/privacy.html">Privacy</a> | <a href="../pages/terms.html">Terms</a> | <a href="../pages/dmca.html">DMCA</a></div></noscript>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../js/config.js"></script>
+<script src="../js/supabase.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/seo.js"></script>
+<script>
+(async () => {
+  await MP.init();
+  
+  MP.seo.set({ title: "About", description: "About Muhafız Playz and the content it lists.", path: "pages/about.html" });
+})();
+</script>
+</body>
+</html>
