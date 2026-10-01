@@ -1,9 +1,7 @@
 # Muhafız Playz robots.txt
-# NOTE: crawlers only read robots.txt at the root of a domain. It works on a custom domain
-# or a "username.github.io" repository, not inside "username.github.io/repo-name/".
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 
-# Replace with your real address:
-Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPO/sitemap.xml
+Sitemap: https://muhafizplayz.github.io/sitemap.xml
