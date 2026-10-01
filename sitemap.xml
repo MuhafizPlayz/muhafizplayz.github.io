@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- STARTER sitemap. Replace YOUR-USERNAME/YOUR-REPO with your real site address.
-     Later, use Admin > SEO Settings > "Generate sitemap.xml" to create a full one with all your titles. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/</loc><priority>1.0</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/category.html</loc><priority>0.6</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/about.html</loc><priority>0.3</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/contact.html</loc><priority>0.3</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/privacy.html</loc><priority>0.2</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/terms.html</loc><priority>0.2</priority></url>
-  <url><loc>https://YOUR-USERNAME.github.io/YOUR-REPO/pages/dmca.html</loc><priority>0.2</priority></url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/category.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/about.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/contact.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/privacy.html</loc>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/terms.html</loc>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://muhafizplayz.github.io/pages/dmca.html</loc>
+    <priority>0.2</priority>
+  </url>
+
 </urlset>
