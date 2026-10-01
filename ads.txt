@@ -1,0 +1,8 @@
+# ads.txt for Muhafız Playz
+# ADMINISTRATOR: replace this file's content with the record(s) given by your approved ad network.
+# Format:  <ad system domain>, <publisher account ID>, <DIRECT or RESELLER>, <certification authority ID>
+# Example (NOT real, do not use):
+# example-adnetwork.com, pub-0000000000000000, DIRECT, 0000000000000000
+#
+# ads.txt is only read at the root of a domain (for example https://yourdomain.com/ads.txt).
+# Do not add lines here until an ad network has approved your site.
